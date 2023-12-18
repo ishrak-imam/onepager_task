@@ -14,7 +14,7 @@ export function useGenerateGreeting() {
     setIsLoading(true);
     setGreeting(undefined);
     const response = await fetch(
-      `/api/quote?recipientName=${params.recipientName}&occasion=${params.occasion}&characterTraits=${params.characterTraits}`
+      `/api/text?recipientName=${params.recipientName}&occasion=${params.occasion}&characterTraits=${params.characterTraits}`
     );
     const data = (await response.json()) as string;
     setGreeting(data);
