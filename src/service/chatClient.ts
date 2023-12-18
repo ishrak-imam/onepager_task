@@ -5,7 +5,9 @@ interface OpenAiClient {
 }
 
 const openai = new OpenAI({
-  apiKey: process.env.OPEN_AI_API_KEY,
+  apiKey:
+    process.env.OPEN_AI_API_KEY ||
+    "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", // adding the api key fallback only for the demo purpose
 });
 
 export const openAiClient: OpenAiClient = async (promptString: string) => {
