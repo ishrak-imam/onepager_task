@@ -4,11 +4,14 @@ The app takes some metadata inputs such as recipient name, occasion and the char
 
 If the chatGPT API fails for some reason the app gracefully fallbacks to a very basic greeting created locally.
 
-Ideally the OpenAI api key should come from the env variable but this is a demo task and an api key is added in the code. However, this will only be a fallback if an api key is not provided in the `.env.local` file.
+<!-- Ideally the OpenAI api key should come from the env variable but this is a demo task and an api key is added in the code. However, this will only be a fallback if an api key is not provided in the `.env.local` file. -->
+
 
 ## Getting Started
 
-First, run the development server:
+First create a `.env.local` file similar to `.env.example` and add an OpenAI api key there.
+
+then, run the development server:
 
 ```bash
 yarn && yarn dev
