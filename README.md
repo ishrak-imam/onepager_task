@@ -15,3 +15,10 @@ yarn && yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to to use the app
+
+
+Here is a video demo
+
+
+https://github.com/ishrak-imam/onepager_task/assets/16683923/56e3db55-e019-4ea1-866f-173c22e871f5
+
